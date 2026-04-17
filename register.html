@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Polyscope Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body class="auth-body">
+  <header class="site-header auth-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="Polyscope logo.png" alt="Polyscope Labs logo">
+        <div>
+          <span class="brand-mark">Polyscope Labs</span>
+          <span class="brand-subtitle">Experimental consumer research</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a class="ghost-link" href="index.html">Back to site</a>
+        <a class="button button-secondary" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-layout container">
+      <div class="auth-copy reveal">
+        <span class="eyebrow">Request access</span>
+        <h1>Join the next wave of Polyscope testers.</h1>
+        <p>The register page now carries the same design language and motion system as the rest of the site, making the experience feel finished and intentional.</p>
+        <div class="auth-highlights">
+          <article class="glass-card">
+            <strong>Consistent styling</strong>
+            <span>Shared surfaces, shadows, and button patterns.</span>
+          </article>
+          <article class="glass-card">
+            <strong>Clearer onboarding</strong>
+            <span>Better input labels and a more modern card layout.</span>
+          </article>
+          <article class="glass-card">
+            <strong>Ready to extend</strong>
+            <span>Easy to connect to real auth later.</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="auth-card glass-panel reveal reveal-delay-1">
+        <div class="auth-card-top">
+          <img src="Lock.png" alt="Security icon" class="auth-illustration">
+          <div>
+            <span class="eyebrow">Create your profile</span>
+            <h2>Register</h2>
+          </div>
+        </div>
+
+        <form class="auth-form" id="register-form" novalidate>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="alex@polyscope.dev" required>
+          </label>
+          <label class="password-field">
+            Password
+            <div class="password-wrap">
+              <input type="password" name="password" placeholder="Create a password" required>
+              <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+            </div>
+          </label>
+          <label class="password-field">
+            Confirm password
+            <div class="password-wrap">
+              <input type="password" name="confirmPassword" placeholder="Retype your password" required>
+              <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+            </div>
+          </label>
+          <button type="submit" class="button button-primary button-full">Create account</button>
+        </form>
+
+        <p class="auth-switch">Already have an account? <a href="login.html">Log in here</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.auth-body {
+  background:
+    radial-gradient(circle at top left, rgba(124, 157, 255, 0.16), transparent 26%),
+    radial-gradient(circle at 90% 0%, rgba(246, 169, 220, 0.14), transparent 24%),
+    linear-gradient(180deg, #091425 0%, #0a1527 100%);
+}
+
+.auth-header {
+  position: sticky;
+}
+
+.auth-main {
+  min-height: calc(100vh - var(--header-height));
+  display: grid;
+  align-items: center;
+  padding: 2.5rem 0 4rem;
+}
+
+.auth-layout {
+  align-items: center;
+}
+
+.auth-copy {
+  max-width: 34rem;
+}
+
+.auth-card {
+  padding: 1.4rem;
+}
+
+.auth-card-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.auth-illustration {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.24));
+}
+
+.password-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.password-toggle {
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  padding: 0.85rem 0.95rem;
+}
+
+.auth-switch {
+  margin: 0.25rem 0 0;
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  .auth-copy {
+    max-width: none;
+  }
+}

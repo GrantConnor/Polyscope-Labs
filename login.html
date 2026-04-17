@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Polyscope Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body class="auth-body">
+  <header class="site-header auth-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="Polyscope logo.png" alt="Polyscope Labs logo">
+        <div>
+          <span class="brand-mark">Polyscope Labs</span>
+          <span class="brand-subtitle">Experimental consumer research</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a class="ghost-link" href="index.html">Back to site</a>
+        <a class="button button-secondary" href="register.html">Create account</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-layout container">
+      <div class="auth-copy reveal">
+        <span class="eyebrow">Welcome back</span>
+        <h1>Access your Polyscope dashboard.</h1>
+        <p>Even as a static concept, the login page now feels like part of the same premium system instead of a disconnected form.</p>
+        <div class="auth-highlights">
+          <article class="glass-card">
+            <strong>Cleaner hierarchy</strong>
+            <span>Improved spacing, contrast, and layout balance.</span>
+          </article>
+          <article class="glass-card">
+            <strong>Better cohesion</strong>
+            <span>Shared colors, buttons, and typography across every page.</span>
+          </article>
+          <article class="glass-card">
+            <strong>Smoother interactions</strong>
+            <span>Password toggles, motion, and clear action states.</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="auth-card glass-panel reveal reveal-delay-1">
+        <div class="auth-card-top">
+          <img src="Lock.png" alt="Security icon" class="auth-illustration">
+          <div>
+            <span class="eyebrow">Secure access</span>
+            <h2>Login</h2>
+          </div>
+        </div>
+
+        <form class="auth-form" id="login-form" novalidate>
+          <label>
+            Email or username
+            <input type="text" name="username" placeholder="alex@polyscope.dev" required>
+          </label>
+          <label class="password-field">
+            Password
+            <div class="password-wrap">
+              <input type="password" name="password" placeholder="Enter your password" required>
+              <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+            </div>
+          </label>
+          <button type="submit" class="button button-primary button-full">Log in</button>
+        </form>
+
+        <p class="auth-switch">Need an account? <a href="register.html">Register here</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
